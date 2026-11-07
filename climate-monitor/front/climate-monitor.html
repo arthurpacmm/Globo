@@ -1,0 +1,158 @@
+﻿    <!-- ================= MONITORAMENTO GLOBAL ================= -->
+
+    <div class="monitor-overlay" id="monitorOverlay">
+
+        <div class="monitor-header">
+            <div>
+                <span class="status-dot"></span>
+                CLIMATE MONITOR // GLOBAL
+            </div>
+
+            <div class="monitor-header-right">
+                <span id="monitorClock">00:00:00</span>
+                <button id="closeMonitor" aria-label="Fechar monitoramento">×</button>
+            </div>
+        </div>
+
+        <div class="monitor-intro">
+            <div>
+                <span class="monitor-kicker">SISTEMA DE OBSERVAÇÃO CLIMÁTICA</span>
+                <h2>Monitoramento <span>do planeta.</span></h2>
+                <p>
+                    Arraste o globo para explorar. Os feixes indicam pontos de
+                    monitoramento. Clique em um deles para analisar os dados climáticos.
+                </p>
+            </div>
+
+            <div class="monitor-live">
+                <span class="status-dot"></span>
+                DADOS AO VIVO
+                <small>Open-Meteo · clique em um ponto</small>
+            </div>
+        </div>
+
+        <div class="monitor-main">
+
+            <aside class="monitor-info" id="monitorInfo">
+
+                <div class="monitor-info-top">
+                    <span id="monitorCode">GLOBAL / 00</span>
+                    <span class="monitor-live-label">● ONLINE</span>
+                    <button class="monitor-panel-close" id="closeMonitorInfo" type="button" aria-label="Fechar dados da cidade">×</button>
+                </div>
+
+                <div class="monitor-location">
+                    <span id="monitorCity">Selecione um ponto</span>
+                    <h3 id="monitorCountry">no globo</h3>
+                </div>
+
+                <div class="monitor-coordinates">
+                    <span id="monitorCoords">--° / --°</span>
+                    <span id="monitorRegion">MONITORAMENTO CLIMÁTICO</span>
+                </div>
+
+                <div class="climate-highlight">
+                    <small>TEMPERATURA ATUAL</small>
+                    <strong id="monitorTemp">--°C</strong>
+                    <em id="monitorYearAvg">Média de 2026: --°C</em>
+                    <span id="monitorWeather">Aguardando seleção</span>
+                </div>
+
+                <div class="climate-data-list">
+
+                    <div class="climate-data">
+                        <span>20 ANOS ATRÁS</span>
+                        <strong id="monitorPast">--°C</strong>
+                        <small id="monitorPastLabel">média anual</small>
+                    </div>
+
+                    <div class="climate-data">
+                        <span>DAQUI 20 ANOS</span>
+                        <strong id="monitorFuture">--°C</strong>
+                        <small id="monitorFutureLabel">projeção média</small>
+                    </div>
+
+                    <div class="climate-data">
+                        <span>VARIAÇÃO</span>
+                        <strong id="monitorDelta">--</strong>
+                        <small>ritmo global por década</small>
+                    </div>
+
+                    <div class="climate-data">
+                        <span>RISCO CLIMÁTICO</span>
+                        <strong id="monitorRisk">--</strong>
+                        <small id="monitorRiskText">selecione um ponto</small>
+                    </div>
+
+                </div>
+
+                <div class="forecast-panel">
+                    <div class="forecast-head">
+                        <span>PREVISÃO // 7 DIAS</span>
+                        <small id="forecastSummary">Selecione um ponto</small>
+                    </div>
+
+                    <div class="forecast-chart" id="forecastChart">
+                        <span class="forecast-empty">Aguardando dados da Open-Meteo</span>
+                    </div>
+                </div>
+
+                <div class="monitor-topics">
+                    <span id="tagHeat">CALOR</span>
+                    <span id="tagWater">ÁGUA</span>
+                    <span id="tagExtreme">EVENTOS EXTREMOS</span>
+                </div>
+
+                <div class="monitor-metrics">
+                    <div>
+                        <span>ÁGUA</span>
+                        <strong id="monitorWater">--</strong>
+                    </div>
+                    <div>
+                        <span>DESMATAMENTO</span>
+                        <strong id="monitorForest">--</strong>
+                    </div>
+                    <div>
+                        <span>BIODIVERSIDADE</span>
+                        <strong id="monitorBiodiversity">--</strong>
+                    </div>
+                    <div>
+                        <span>ADAPTAÇÃO</span>
+                        <strong id="monitorAdaptation">--</strong>
+                    </div>
+                </div>
+
+                <div class="monitor-source">
+                    <span>CONTEXTO ODS 13</span>
+                    <p id="monitorContext">
+                        Selecione uma cidade para visualizar como temperatura,
+                        água, eventos extremos e adaptação se relacionam à ação climática.
+                    </p>
+                </div>
+
+            </aside>
+
+            <div class="globe-panel">
+
+                <div class="globe-status">
+                    <span></span>
+                    <span>DRAG / ZOOM / SELECT</span>
+                </div>
+
+                <div id="globeContainer"></div>
+
+                <div class="globe-hint">
+                    <span>↔</span> ARRASTE PARA GIRAR
+                    <span>•</span>
+                    <span>SCROLL</span> ZOOM
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="monitor-footer">
+            <span>ODS 13 // AÇÃO CONTRA A MUDANÇA GLOBAL DO CLIMA</span>
+            <span>GLOBO INTERATIVO // OPEN-METEO // 2026</span>
+        </div>
+
